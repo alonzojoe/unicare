@@ -1,6 +1,5 @@
 import { HEADER_CONTENT } from "../constants";
 import Button from "@/components/UI/Button";
-import { LiaUserCircle } from "react-icons/lia";
 
 const Navbar = () => {
   const { logo, buttonSign, buttonLabel } = HEADER_CONTENT;

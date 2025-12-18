@@ -1,15 +1,18 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/beagle-126158');
 
 @theme {
   --font-primary: "Noto Sans Hebrew", sans-serif;
+  --font-secondary: 'Beagle', san-serif;
 
   /* colors */
   --color-primary: #383172;
   --color-light-primary: #6159A4;
   --color-sky: #49C3E1;
   --color-sky-soft: #DCF3F9;
-  --palette-neutral-600: #28282A;
+  --color-neutral-600: #28282A;
+
 
   /* font-sizes */
   --text-2xs: 8px;
@@ -38,46 +41,61 @@
   /* custom screen width based on figma */
   --max-width-10xl: 1760px;
 
-  --font-700-line-136: 700 136%;
-  --font-600-line-normal: 600 normal;
-  --font-500-line-130: 500 130%;
-  --font-400-line-147: 400 147%;
-  --font-700-line-115: 700 115%;
-  --font-400-line-122: 400 122%;
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+
+  --line-height-136: 136%;
+  --line-height-130: 130%;
+  --line-height-147: 147%;
+  --line-height-115: 115%;
+  --line-height-122: 122%;
+  --line-height-normal: normal;
 }
+
+
 
 html body {
   font-family: var(--font-primary);
   background: #FAFAFA;
 }
 
+.hero-bg {
+  background: linear-gradient(357deg, #FAFAFA 2.65%, #D9D6EF 97.35%);
+}
+
 .font-700-line-136 {
-  @apply font-bold;
-  /* fallback */
-  font: var(--font-700-line-136);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-136);
+}
+
+.font-700-line-normal {
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-normal);
 }
 
 .font-600-line-normal {
-  @apply font-semibold;
-  font: var(--font-600-line-normal);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-normal);
 }
 
 .font-500-line-130 {
-  @apply font-medium;
-  font: var(--font-500-line-130);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-130);
 }
 
 .font-400-line-147 {
-  @apply font-normal;
-  font: var(--font-400-line-147);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-147);
 }
 
 .font-700-line-115 {
-  @apply font-bold;
-  font: var(--font-700-line-115);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-115);
 }
 
 .font-400-line-122 {
-  @apply font-normal;
-  font: var(--font-400-line-122);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-122);
 }
