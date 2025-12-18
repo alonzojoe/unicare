@@ -208,3 +208,32 @@ export const HERO_CONTENT = {
     },
   ],
 };
+
+const date = new Date();
+const year = date.getFullYear();
+
+export const FOOTER_CONTENT = {
+  sections: [
+    {
+      title: "לבעלי קליניקות",
+      items: ["לינק", "לינק"],
+    },
+    {
+      title: "למטפלים",
+      items: ["לינק", "לינק"],
+    },
+    {
+      title: "למטופלים",
+      items: ["לינק", "לינק"],
+    },
+    {
+      title: "אודות",
+      items: ["יצירת קשר", "אודות Unicare", "לינק", "לינק"],
+    },
+    {
+      title: "מדיניות",
+      items: ["מדיניות פרטיות", "תנאי שימוש", "הצהרת נגישות"],
+    },
+  ],
+  reserved: `All rights reserved © ${year} Unicare`,
+};
