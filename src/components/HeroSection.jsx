@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "@/constants";
-import { cn } from "@/libs/utils";
+import HeroGallery from "@/assets/images/hero/Hero_Gallery.png";
 
 import SearchContainer from "@/components/UI/SearchContainer";
 import FeatureCard from "@/components/Items/FeatureCard";
@@ -12,7 +12,9 @@ const HeroSection = () => {
   return (
     <section id="hero" className="pt-36 lg:pt-42">
       <div className="hero-bg rounded-4xl max-w-10xl mx-auto py-14 px-8 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-8 lg:grid-cols-2">
-        <div className="bg-red-500 h-50"></div>
+        <div className="flex items-center justify-end md:justify-center">
+          <img className="w-md xl:w-xl" src={HeroGallery} alt="hero-image" />
+        </div>
         <div className="h-50 flex flex-col space-y-3 items-end">
           <h1 className="font-700-line-normal text-header text-primary text-right italic">
             {title}
