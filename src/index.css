@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
   /* colors */
   --color-primary: #383172;
   --color-light-primary: #6159A4;
@@ -34,4 +33,8 @@
 
   /* custom screen width based on figma */
   --max-width-10xl: 1760px;
+}
+
+body {
+  background: #FAFAFA;
 }
