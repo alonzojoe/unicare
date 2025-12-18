@@ -12,6 +12,7 @@
   --color-sky: #49C3E1;
   --color-sky-soft: #DCF3F9;
   --color-neutral-600: #28282A;
+  --color-gray-text: #6D6E71;
 
 
   /* font-sizes */
@@ -98,4 +99,8 @@ html body {
 .font-400-line-122 {
   font-weight: var(--font-weight-400);
   line-height: var(--line-height-122);
+}
+
+.shadow-l {
+  box-shadow: 0 24px 32px 0 rgba(97, 89, 164, 0.16), 0 2px 4px 0 rgba(116, 107, 191, 0.08), 0 8px 16px 0 rgba(116, 107, 191, 0.12);
 }

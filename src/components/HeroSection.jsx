@@ -1,7 +1,9 @@
-import { HERO_CONTENT } from "../constants";
+import { HERO_CONTENT } from "@/constants";
+import SearchContainer from "@/components/UI/SearchContainer";
+import { cn } from "../libs/utils";
 
 const HeroSection = () => {
-  const { title, subTitle, items, questions } = HERO_CONTENT;
+  const { title, subTitle, items, questions, searchBar } = HERO_CONTENT;
 
   return (
     <section id="hero" className="pt-36 lg:pt-42">
@@ -23,7 +25,31 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div></div>
+          <div className="w-full flex flex-col space-y-3 my-5">
+            <h2 className="text-5xl text-primary text-right font-500-line-130">
+              {searchBar.title}
+            </h2>
+            <SearchContainer>
+              <div className="flex items-center gap-2 w-full">
+                {searchBar.fields.map((item, index) => (
+                  <div
+                    className={cn(
+                      `flex flex-1 justify-end items-center gap-4  pr-4`,
+                      index === 0 && "border-r-2  border-gray-300"
+                    )}
+                    key={item.id}
+                  >
+                    <input
+                      type="text"
+                      placeholder={item.placeholder}
+                      className="w-full text-right outline-0 focus:ring-0 text-gray-400 text-xl bg-transparent"
+                    />
+                    {item.icon}
+                  </div>
+                ))}
+              </div>
+            </SearchContainer>
+          </div>
 
           <div className="flex flex-col items-end space-y-3">
             {questions.map((item) => (
