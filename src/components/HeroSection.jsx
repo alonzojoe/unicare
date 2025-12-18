@@ -1,6 +1,10 @@
 import { HERO_CONTENT } from "@/constants";
+import { cn } from "@/libs/utils";
+
 import SearchContainer from "@/components/UI/SearchContainer";
-import { cn } from "../libs/utils";
+import FeatureCard from "@/components/Items/FeatureCard";
+import QuestionItem from "@/components/Items/Questionitem";
+import SearchField from "@/components/UI/SearchField";
 
 const HeroSection = () => {
   const { title, subTitle, items, questions, searchBar } = HERO_CONTENT;
@@ -25,27 +29,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-col space-y-3 my-5">
+          <div className="w-[90%] flex flex-col space-y-3 my-5">
             <h2 className="text-5xl text-primary text-right font-500-line-130">
               {searchBar.title}
             </h2>
             <SearchContainer>
               <div className="flex items-center gap-2 w-full">
                 {searchBar.fields.map((item, index) => (
-                  <div
-                    className={cn(
-                      `flex flex-1 justify-end items-center gap-4  pr-4`,
-                      index === 0 && "border-r-2  border-gray-300"
-                    )}
-                    key={item.id}
-                  >
-                    <input
-                      type="text"
-                      placeholder={item.placeholder}
-                      className="w-full text-right outline-0 focus:ring-0 text-gray-400 text-xl bg-transparent"
-                    />
-                    {item.icon}
-                  </div>
+                  <SearchField item={item} index={index} key={item.id} />
                 ))}
               </div>
             </SearchContainer>
@@ -59,33 +50,6 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-export const FeatureCard = ({ item, index }) => {
-  return (
-    <div
-      className={`flex items-center gap-2 ${
-        index < 2 ? "border-r-2 border-gray-300 pr-4" : ""
-      }`}
-    >
-      <div className="flex flex-col text-right">
-        <span className="text-xl font-bold ">{item.title}</span>
-        <span className="text-md">{item.description}</span>
-      </div>
-      {item.icon}
-    </div>
-  );
-};
-
-export const QuestionItem = ({ item }) => {
-  return (
-    <div className={`flex items-center gap-2`}>
-      <div className="flex flex-col text-right">
-        <span className="text-md font-400-line-147">{item.question}</span>
-      </div>
-      {item.icon}
-    </div>
   );
 };
 
