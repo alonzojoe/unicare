@@ -3,6 +3,8 @@ import UpperRight from "@/assets/images/hero/hero-upper-r.png";
 import LowerLeft from "@/assets/images/hero/hero-lower-l.png";
 import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
+import AppleLogo from "@/assets/images/logos/apple.svg";
+import PlayLogo from "@/assets/images/logos/android.svg";
 
 export const HEADER_CONTENT = {
   logo: Logo,
@@ -213,6 +215,16 @@ const date = new Date();
 const year = date.getFullYear();
 
 export const FOOTER_CONTENT = {
+  appStore: {
+    download: "Download on the",
+    label: "App Store",
+    icon: AppleLogo,
+  },
+  playStore: {
+    download: "Download on the",
+    label: "Play Store",
+    icon: PlayLogo,
+  },
   sections: [
     {
       title: "לבעלי קליניקות",
