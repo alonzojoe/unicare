@@ -215,16 +215,20 @@ const date = new Date();
 const year = date.getFullYear();
 
 export const FOOTER_CONTENT = {
-  appStore: {
-    download: "Download on the",
-    label: "App Store",
-    icon: AppleLogo,
-  },
-  playStore: {
-    download: "Download on the",
-    label: "Play Store",
-    icon: PlayLogo,
-  },
+  downloadButtons: [
+    {
+      download: "Download on the",
+      label: "App Store",
+      icon: AppleLogo,
+      link: "https://www.apple.com/ph/app-store/",
+    },
+    {
+      download: "Download on the",
+      label: "Play Store",
+      icon: PlayLogo,
+      link: "https://play.google.com/store/games?hl=en&pli=1",
+    },
+  ],
   sections: [
     {
       title: "לבעלי קליניקות",

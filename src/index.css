@@ -15,6 +15,7 @@
   --color-gray-text: #6D6E71;
   --color-palette-primary-200: #A8A2D7;
   /* font-sizes */
+  --text-3xs: 7px;
   --text-2xs: 8px;
   --text-xs: 10px;
   --text-sm: 12px;
