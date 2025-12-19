@@ -3,7 +3,7 @@ import Button from "@/components/UI/Buttons/Button";
 const OwnersCard = ({ title, subTitle, items, cardBg, buttonText }) => {
   return (
     <div
-      className="clinic-card w-full bg-cover !bg-position-[20%_center] bg-no-repeat"
+      className="clinic-card w-full bg-cover bg-position-[0%_center]! bg-no-repeat"
       style={{ backgroundImage: `url(${cardBg})` }}
     >
       <div className="clinic-card-content p-10 md:p-16 h-full flex flex-col items-end justify-end gap-6 text-white text-right">
@@ -12,7 +12,7 @@ const OwnersCard = ({ title, subTitle, items, cardBg, buttonText }) => {
           <h2 className="text-white text-4xl md:text-6xl mt-0">{subTitle}</h2>
         </div>
 
-        <ul className="space-y-4 text-lg md:text-xl">
+        <ul className="space-y-5 text-lg md:text-xl my-5">
           {items.map((item) => (
             <ClinicItem label={item.label} icon={item.icon} key={item.id} />
           ))}

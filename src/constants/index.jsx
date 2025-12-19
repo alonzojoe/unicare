@@ -20,7 +20,7 @@ import Icon5 from "@/assets/images/logos/sad.png";
 
 //Owners Section
 import HeroOwner from "@/assets/images/owners/hero.png";
-import CardBg from "@/assets/images/owners/card-bg.jpg";
+import CardBg from "@/assets/images/owners/card-bg2.jpg";
 import Ic1 from "@/assets/images/owners/ic1.png";
 import Ic2 from "@/assets/images/owners/ic2.png";
 import Ic3 from "@/assets/images/owners/ic3.png";
