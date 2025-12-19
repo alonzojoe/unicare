@@ -222,18 +222,21 @@ export const TREATMENT_CONTENT = {
       title: `גישה לרופאים ומחירים בכל הארץ`,
       subTitle: `השוואה נוחה ושקופה של טיפולים ומטפלים – מכל מקום ובכל זמן`,
       bgColor: "#6159A4",
+      textColor: "text-white",
     },
     {
       id: 2,
       title: `שינוי או ביטול תור בלחיצה`,
       subTitle: `שליטה מלאה בתורים – ללא שיחות, ללא מאמץ`,
       bgColor: "#EAEAEB",
+      textColor: "text-neutral-600",
     },
     {
       id: 3,
       title: `חכם לפי תחום קום, זמינות וביטוח`,
       subTitle: `מציג את כל המטפלים בצורה ברורה עם סינון קל ונוח.`,
       bgColor: "#E4E3F3",
+      textColor: "text-neutral-600",
     },
   ],
 };
