@@ -1,6 +1,7 @@
 import { RECRUITMENT_CONTENT } from "@/constants/index";
 import ContentHeader from "@/components/UI/Shared/ContentHeader";
 import RecruitmentCard from "@/components/Items/RecruitmentCard";
+import Button from "@/components/UI/Buttons/Button";
 
 const RectruitmentSection = () => {
   const { title, subTitle, imageUrl, header, items } = RECRUITMENT_CONTENT;
@@ -15,11 +16,20 @@ const RectruitmentSection = () => {
             alt="recruitment-image"
           />
         </div>
-        <div className="order-1 md:order-2 flex flex-col justify-center space-y-3 items-center lg:items-stretch">
-          <h3 className="text-center">{header}</h3>
+        <div className="order-1 md:order-2 flex flex-col justify-center gap-6 items-center lg:items-stretch">
+          <h3 className="text-center text-light-primary text-3xl font-700-line-115 mb-5">
+            {header}
+          </h3>
           {items.map((item) => (
             <RecruitmentCard content={item} key={item.id} />
           ))}
+          <div className="flex mt-5 items-center justify-center">
+            <Button className="min-w-[42.5] bg-light-primary">
+              <div className="flex items-center gap-2 text-lg">
+                <span className="font-700-line-136 text-white">{`הצטרפו לאלפי המטפלים`}</span>
+              </div>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 const RecruitmentCard = ({ content }) => {
   const { title, description, icon } = content;
   return (
-    <div className="bg-sky-soft p-4 rounded-1xl flex items-end justify-end gap-4">
+    <div className="bg-sky-soft p-4 rounded-1xl flex items-center justify-end gap-4">
       <div className="flex flex-col space-y-2 items-end text-right text-darker">
         <h4 className="text-3xl font-700-line-115">{title}</h4>
         <span className="text-md font-400-line-147">{description}</span>
