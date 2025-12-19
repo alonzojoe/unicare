@@ -110,9 +110,10 @@ html body {
 
 .clinic-card {
   position: relative;
-  border-radius: 60px 60px 60px 0;
+  padding: 42px 41px 41px 25px;
   background: lightgray;
   overflow: hidden;
+  border-radius: 0 0 60px 0;
 }
 
 .clinic-card::before {
@@ -129,4 +130,43 @@ html body {
 .clinic-card-content {
   position: relative;
   z-index: 2;
+}
+
+.owner-hero-top {
+  border-radius: 60px 60px 0 60px;
+  background: lightgray;
+  background-position: 0px -139.103px;
+  background-size: 100% 167.167%;
+  background-repeat: no-repeat;
+}
+
+.owner-hero-bottom {
+  border-radius: 60px 0 60px 60px;
+  background: lightgray;
+  background-position: 0px -145.419px;
+  background-size: 100% 167.726%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .clinic-card {
+    border-radius: 60px 60px 60px 0;
+    padding: 60px 52px 52px 109px;
+  }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+  .owner-hero-top {
+    background-position: 0px -47.535px;
+    background-size: 100% 167.167%;
+  }
+
+  .owner-hero-bottom {
+    background-position: 0px -49.873px;
+    background-size: 100% 167.726%;
+    background-repeat: no-repeat;
+  }
 }

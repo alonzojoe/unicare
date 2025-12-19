@@ -26,6 +26,8 @@ import Ic2 from "@/assets/images/owners/ic2.png";
 import Ic3 from "@/assets/images/owners/ic3.png";
 import Ic4 from "@/assets/images/owners/ic4.png";
 import Ic5 from "@/assets/images/owners/ic5.png";
+import HeroTop from "@/assets/images/owners/owner-hero-top.png";
+import HeroBottom from "@/assets/images/owners/owner-hero-bottom.png";
 
 export const HEADER_CONTENT = {
   logo: Logo,
@@ -376,4 +378,6 @@ export const OWNERS_CONTENT = {
   ],
   buttonText: `בואו נעבוד ביחד`,
   cardBg: CardBg,
+  heroTop: HeroTop,
+  heroBottom: HeroBottom,
 };

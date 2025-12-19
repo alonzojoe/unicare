@@ -6,10 +6,14 @@ const OwnersCard = ({ title, subTitle, items, cardBg, buttonText }) => {
       className="clinic-card w-full bg-cover bg-position-[0%_center]! bg-no-repeat"
       style={{ backgroundImage: `url(${cardBg})` }}
     >
-      <div className="clinic-card-content p-10 md:p-16 h-full flex flex-col items-end justify-end gap-6 text-white text-right">
+      <div className="clinic-card-content h-full flex flex-col items-end justify-end gap-6 text-white text-right">
         <div>
-          <h2 className="text-white text-4xl md:text-6xl">{title}</h2>
-          <h2 className="text-white text-4xl md:text-6xl mt-0">{subTitle}</h2>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-6xl">
+            {title}
+          </h2>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-6xl mt-0">
+            {subTitle}
+          </h2>
         </div>
 
         <ul className="space-y-5 text-lg md:text-xl my-5">
@@ -19,7 +23,7 @@ const OwnersCard = ({ title, subTitle, items, cardBg, buttonText }) => {
         </ul>
 
         <Button
-          className="min-w-[169px] bg-white text-darker"
+          className="min-w-[169px] bg-white border-white text-darker"
           variant="outline"
         >
           <div className="flex items-center gap-2 text-lg">
@@ -34,9 +38,7 @@ const OwnersCard = ({ title, subTitle, items, cardBg, buttonText }) => {
 export const ClinicItem = ({ label, icon }) => {
   return (
     <li className="flex items-center gap-3 justify-end">
-      <span className="text-white text-base md:text-md font-700-line-115">
-        {label}
-      </span>
+      <span className="text-white text-md font-700-line-115">{label}</span>
       <img className="w-4 md:w-6 h-auto" src={icon} alt={`${label}-icon`} />
     </li>
   );
