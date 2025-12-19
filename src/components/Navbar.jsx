@@ -75,16 +75,16 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden fixed inset-x-0 top-20 bottom-0 grid transition-all ease-in-out duration-300 ${
+        className={`md:hidden fixed inset-x-0 top-20 bottom-0 grid transition-all ease-in-out duration-300 z-50 ${
           toggle
-            ? "grid-rows-[1fr] opacity-100 translate-y-0 scale-100"
-            : "grid-rows-[0fr] opacity-0 -translate-y-2 scale-95"
+            ? "grid-rows-[1fr] opacity-100  pointer-events-auto"
+            : "grid-rows-[0fr] opacity-0  pointer-events-none"
         }`}
       >
         <div className="overflow-hidden">
-          <div className="h-full p-4 bg-white backdrop-blur-md overflow-y-auto mt-10">
+          <div className="h-full p-4 bg-theme-bg backdrop-blur-md overflow-y-auto">
             <div className="flex flex-col items-center space-y-5">
-              <Button className="min-w-[169px]" variant="outline">
+              <Button className="min-w-42.5" variant="outline">
                 <div className="flex items-center gap-2 text-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

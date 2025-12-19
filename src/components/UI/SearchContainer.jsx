@@ -22,4 +22,22 @@ const SearchContainer = ({ children, className, ...props }) => {
   );
 };
 
+export const SearchContainerSingle = ({ children, className, ...props }) => {
+  const baseClasses =
+    "w-full flex items-center gap-3 p-3 rounded-[16px] text-sm font-medium transition-colors cursor-pointer hover:opacity-75";
+
+  return (
+    <button
+      className={cn(
+        baseClasses,
+        `bg-white text-palette-neutral-600 shadow-l border border-white`,
+        className
+      )}
+      {...props}
+    >
+      <div className="flex-1 overflow-hidden">{children}</div>
+    </button>
+  );
+};
+
 export default SearchContainer;
