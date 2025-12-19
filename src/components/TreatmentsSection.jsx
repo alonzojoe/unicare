@@ -9,7 +9,7 @@ const TreatmentsSection = () => {
   return (
     <section id="treatment">
       <ContentHeader title={title} subTitle={subTitle} />
-      <div className="max-w-10xl mx-auto py-14 lg:pl-[42.5] lg:pr-16 grid items-center px-8 lg:px-0 grid-cols-1 gap-5 lg:grid-cols-3 mb-20">
+      <div className="max-w-10xl mx-auto py-14 grid items-center px-8 lg:px-0 grid-cols-1 gap-5 lg:grid-cols-3 mb-20">
         {cards.map((item) => (
           <TreatmentCard content={item} key={item.id} />
         ))}
