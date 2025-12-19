@@ -1,11 +1,35 @@
+//Header
 import UpperLeft from "@/assets/images/hero/hero-upper-l.png";
 import UpperRight from "@/assets/images/hero/hero-upper-r.png";
 import LowerLeft from "@/assets/images/hero/hero-lower-l.png";
 import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
+import LogoLight from "@/assets/images/header/Logo-sm.svg";
+
+//Footer
+import AppleLogo from "@/assets/images/logos/apple.svg";
+import PlayLogo from "@/assets/images/logos/android.svg";
+
+//Recruiment Section
+import RecruitmentHero from "@/assets/images/rectruitment/hero.png";
+import Icon1 from "@/assets/images/logos/call.png";
+import Icon2 from "@/assets/images/logos/frame.png";
+import Icon3 from "@/assets/images/logos/close.png";
+import Icon4 from "@/assets/images/logos/building.png";
+import Icon5 from "@/assets/images/logos/sad.png";
+
+//Owners Section
+import HeroOwner from "@/assets/images/owners/hero.png";
+import CardBg from "@/assets/images/owners/card-bg.jpg";
+import Ic1 from "@/assets/images/owners/ic1.png";
+import Ic2 from "@/assets/images/owners/ic2.png";
+import Ic3 from "@/assets/images/owners/ic3.png";
+import Ic4 from "@/assets/images/owners/ic4.png";
+import Ic5 from "@/assets/images/owners/ic5.png";
 
 export const HEADER_CONTENT = {
   logo: Logo,
+  logoLight: LogoLight,
   buttonSign: `אזור אישי`,
   buttonLabel: `הצטרפו כמטפל`,
 };
@@ -209,10 +233,52 @@ export const HERO_CONTENT = {
   ],
 };
 
+export const TREATMENT_CONTENT = {
+  title: `כבר לא צריך לחכות חודשים לטיפולים`,
+  subTitle: `לבריאות לא צריכים להיות גבולות`,
+  cards: [
+    {
+      id: 1,
+      title: `גישה לרופאים ומחירים בכל הארץ`,
+      subTitle: `השוואה נוחה ושקופה של טיפולים ומטפלים – מכל מקום ובכל זמן`,
+      bgColor: "#6159A4",
+      textColor: "text-white",
+    },
+    {
+      id: 2,
+      title: `שינוי או ביטול תור בלחיצה`,
+      subTitle: `שליטה מלאה בתורים – ללא שיחות, ללא מאמץ`,
+      bgColor: "#EAEAEB",
+      textColor: "text-neutral-600",
+    },
+    {
+      id: 3,
+      title: `חכם לפי תחום קום, זמינות וביטוח`,
+      subTitle: `מציג את כל המטפלים בצורה ברורה עם סינון קל ונוח.`,
+      bgColor: "#E4E3F3",
+      textColor: "text-neutral-600",
+    },
+  ],
+};
+
 const date = new Date();
 const year = date.getFullYear();
 
 export const FOOTER_CONTENT = {
+  downloadButtons: [
+    {
+      download: "Download on the",
+      label: "App Store",
+      icon: AppleLogo,
+      link: "https://www.apple.com/ph/app-store/",
+    },
+    {
+      download: "Download on the",
+      label: "Play Store",
+      icon: PlayLogo,
+      link: "https://play.google.com/store/games?hl=en&pli=1",
+    },
+  ],
   sections: [
     {
       title: "לבעלי קליניקות",
@@ -236,4 +302,78 @@ export const FOOTER_CONTENT = {
     },
   ],
   reserved: `All rights reserved © ${year} Unicare`,
+};
+
+export const RECRUITMENT_CONTENT = {
+  title: `רופאים / אנשי טיפול - הצטרפו ל UNICARE ותהנו מכל היתרונות `,
+  subTitle: ``,
+  imageUrl: RecruitmentHero,
+  header: `אתם תתמקדו בטיפולים ואנחנו בכל השאר`,
+  items: [
+    {
+      id: 1,
+      title: `מענה טלפוני גוזל לכם זמן רבועלות יקרה להעסקת מזכירה?`,
+      description: `המערכת קובעת, מזיזה ומבטלת תורים אוטומטית, בלי צורך במזכירה.`,
+      icon: Icon1,
+    },
+    {
+      id: 2,
+      title: `לא מעוניינים להתעסק בשיווק?`,
+      description: `המערכת קובעת, מזיזה ומבטלת תורים אוטומטית, בלי צורך במזכירה.`,
+      icon: Icon2,
+    },
+    {
+      id: 3,
+      title: `ביטולים פוגעים ברווחיות?`,
+      description: `מדיניות ביטולים לפי החלטת המטפל. שיבוץ מטופלים חלופיים בעת ביטול.`,
+      icon: Icon3,
+    },
+    {
+      id: 4,
+      title: `אין לכם קליניקה ולא משתלם לשכור באופן קבוע?`,
+      description: `עלות לפי שעת שימוש בלבד ואפשרות לשיבוץ אוטומטי בקליניקות בפריסה ארצית.`,
+      icon: Icon4,
+    },
+    {
+      id: 5,
+      title: `מרגישים לבד בתחום?`,
+      description: `הצטרפו לקהילת רופאים פעילה - שיתופים, התייעצויות ומפגשים מקצועיים.`,
+      icon: Icon5,
+    },
+  ],
+};
+
+export const OWNERS_CONTENT = {
+  title: `UNICARE והפכו כל שעה פנויה להזדמנות`,
+  subTitle: `והפכו כל שעה פנויה להזדמנות`,
+  imageUrl: HeroOwner,
+  items: [
+    {
+      id: 1,
+      label: `תפוסה מלאה בשעות הפנויות`,
+      icon: Ic1,
+    },
+    {
+      id: 2,
+      label: `ניהול שקוף ומאובטח של ההשכרה`,
+      icon: Ic2,
+    },
+    {
+      id: 3,
+      label: `חיבור אוטומטי למטפלים מתאימים`,
+      icon: Ic3,
+    },
+    {
+      id: 4,
+      label: `הכנסה נוספת ללא מאמץ`,
+      icon: Ic4,
+    },
+    {
+      id: 5,
+      label: `בלי שיווק - הכל דרך המערכת`,
+      icon: Ic5,
+    },
+  ],
+  buttonText: `בואו נעבוד ביחד`,
+  cardBg: CardBg,
 };

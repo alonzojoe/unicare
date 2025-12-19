@@ -13,9 +13,11 @@
   --color-sky-soft: #DCF3F9;
   --color-neutral-600: #28282A;
   --color-gray-text: #6D6E71;
-
-
+  --color-palette-primary-200: #A8A2D7;
+  --color-theme-bg: #FAFAFA;
+  --color-darker: #1B1B1B;
   /* font-sizes */
+  --text-3xs: 7px;
   --text-2xs: 8px;
   --text-xs: 10px;
   --text-sm: 12px;
@@ -37,6 +39,7 @@
   --radius-4xl: 60px;
   --radius-3xl: 40px;
   --radius-2xl: 24px;
+  --radius-1xl: 14px;
   --radius-xl: 12px;
 
   /* custom screen width based on figma */
@@ -103,4 +106,27 @@ html body {
 
 .shadow-l {
   box-shadow: 0 24px 32px 0 rgba(97, 89, 164, 0.16), 0 2px 4px 0 rgba(116, 107, 191, 0.08), 0 8px 16px 0 rgba(116, 107, 191, 0.12);
+}
+
+.clinic-card {
+  position: relative;
+  border-radius: 60px 60px 60px 0;
+  background: lightgray;
+  overflow: hidden;
+}
+
+.clinic-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(81deg,
+      rgba(73, 195, 225, 0.20) 2.36%,
+      rgba(104, 132, 201, 0.85) 46.11%,
+      rgba(116, 107, 191, 0.95) 93.17%);
+  z-index: 1;
+}
+
+.clinic-card-content {
+  position: relative;
+  z-index: 2;
 }
