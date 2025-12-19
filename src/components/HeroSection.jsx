@@ -1,4 +1,5 @@
 import { HERO_CONTENT } from "@/constants";
+import { cn } from "@/libs/utils";
 import HeroGallery from "@/assets/images/hero/Hero_Gallery.png";
 import SearchContainer, {
   SearchContainerSingle,
@@ -65,13 +66,21 @@ const HeroSection = () => {
           </div>
 
           <div className="w-[90%] hidden md:flex flex-col space-y-3 my-5">
-            <h2 className="text-5xl text-primary text-right font-500-line-130">
+            <h2 className="text-5xl text-primary text-center md:text-right font-500-line-130">
               {searchBar.title}
             </h2>
             <SearchContainer>
               <div className="flex items-center gap-2 w-full">
                 {searchBar.fields.map((item, index) => (
-                  <SearchField item={item} index={index} key={item.id} />
+                  <div
+                    key={item.id}
+                    className={cn(
+                      "flex flex-1 justify-center items-center",
+                      index === 0 && "pr-5 border-r-2 border-gray-300"
+                    )}
+                  >
+                    <SearchField item={item} />
+                  </div>
                 ))}
               </div>
             </SearchContainer>
