@@ -3,11 +3,13 @@ import UpperRight from "@/assets/images/hero/hero-upper-r.png";
 import LowerLeft from "@/assets/images/hero/hero-lower-l.png";
 import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
+import LogoLight from "@/assets/images/header/Logo-sm.svg"
 import AppleLogo from "@/assets/images/logos/apple.svg";
 import PlayLogo from "@/assets/images/logos/android.svg";
 
 export const HEADER_CONTENT = {
   logo: Logo,
+  logoLight: LogoLight,
   buttonSign: `אזור אישי`,
   buttonLabel: `הצטרפו כמטפל`,
 };
