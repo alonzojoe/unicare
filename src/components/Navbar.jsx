@@ -15,8 +15,8 @@ const Navbar = () => {
   const Icon = toggle ? TbX : GiHamburgerMenu;
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-100">
-      <div className="bg-primary md:bg-white/60 md:backdrop-blur-md max-w-10xl mx-auto px-4 py-5 flex items-center justify-between">
+    <nav className="fixed top-0 right-0 left-0 z-100 bg-primary md:bg-white/60 md:backdrop-blur-md ">
+      <div className="max-w-10xl mx-auto px-4 py-5 flex items-center justify-between">
         <div className="md:hidden flex items-center gap-2">
           <Icon
             onClick={toggleMenu}
