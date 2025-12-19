@@ -1,5 +1,6 @@
 import Header from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import TreatmentsSection from "@/components/TreatmentsSection";
 import Footer from "@/components/Footer";
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
       <Header />
 
       <HeroSection />
+
+      <TreatmentsSection />
 
       <Footer />
     </main>

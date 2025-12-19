@@ -3,7 +3,7 @@ import UpperRight from "@/assets/images/hero/hero-upper-r.png";
 import LowerLeft from "@/assets/images/hero/hero-lower-l.png";
 import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
-import LogoLight from "@/assets/images/header/Logo-sm.svg"
+import LogoLight from "@/assets/images/header/Logo-sm.svg";
 import AppleLogo from "@/assets/images/logos/apple.svg";
 import PlayLogo from "@/assets/images/logos/android.svg";
 
@@ -209,6 +209,31 @@ export const HERO_CONTENT = {
           </defs>
         </svg>
       ),
+    },
+  ],
+};
+
+export const TREATMENT_CONTENT = {
+  title: `כבר לא צריך לחכות חודשים לטיפולים`,
+  subTitle: `לבריאות לא צריכים להיות גבולות`,
+  cards: [
+    {
+      id: 1,
+      title: `גישה לרופאים ומחירים בכל הארץ`,
+      subTitle: `השוואה נוחה ושקופה של טיפולים ומטפלים – מכל מקום ובכל זמן`,
+      bgColor: "#6159A4",
+    },
+    {
+      id: 2,
+      title: `שינוי או ביטול תור בלחיצה`,
+      subTitle: `שליטה מלאה בתורים – ללא שיחות, ללא מאמץ`,
+      bgColor: "#EAEAEB",
+    },
+    {
+      id: 3,
+      title: `חכם לפי תחום קום, זמינות וביטוח`,
+      subTitle: `מציג את כל המטפלים בצורה ברורה עם סינון קל ונוח.`,
+      bgColor: "#E4E3F3",
     },
   ],
 };
