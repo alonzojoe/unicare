@@ -9,13 +9,14 @@ import QuestionItem from "@/components/Items/Questionitem";
 import SearchField from "@/components/UI/SearchField";
 
 import Button from "@/components/UI/Buttons/Button";
+import SmImage from "@/assets/images/hero/smImage.png";
 
 const HeroSection = () => {
   const { title, subTitle, items, questions, searchBar } = HERO_CONTENT;
 
   return (
     <section id="hero" className="pt-20 md:36 lg:pt-42">
-      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-8 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-10 lg:mb-20">
+      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-4 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-0 lg:gap-8 lg:grid-cols-2 mb-10 lg:mb-20">
         <div className="order-2 md:order-1 hidden lg:flex items-center justify-end md:justify-center">
           <img className="w-md xl:w-xl" src={HeroGallery} alt="hero-image" />
         </div>
@@ -91,6 +92,10 @@ const HeroSection = () => {
               <QuestionItem key={item.id} item={item} />
             ))}
           </div>
+        </div>
+
+        <div className="order-2 flex md:hidden items-center justify-center">
+          <img className="w-full xl:w-xl" src={SmImage} alt="hero-image" />
         </div>
       </div>
     </section>
