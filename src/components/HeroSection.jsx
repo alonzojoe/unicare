@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="pt-20 md:36 lg:pt-42">
-      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-8 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
+      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-4 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
         <div className="order-2 md:order-1 flex items-center justify-end md:justify-center">
           <img className="w-md xl:w-xl" src={HeroGallery} alt="hero-image" />
         </div>
