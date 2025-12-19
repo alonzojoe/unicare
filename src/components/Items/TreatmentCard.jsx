@@ -1,11 +1,17 @@
 import { cn } from "@/libs/utils.js";
 
 const TreatmentCard = ({ content }) => {
-  const { title, subTitle, bgColor, textColor } = content;
+  const { title, subTitle, bgColor, textColor, bgImg } = content;
   return (
     <div
       className="bg-white min-h-40 md:min-h-70 rounded-2xl p-7.5 w-full flex flex-col items-end justify-end gap-1 text-neutral-600 text-right"
-      style={{ backgroundColor: bgColor }}
+      style={{
+        backgroundColor: bgColor,
+        backgroundImage: `url(${bgImg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <h3
         className={cn(

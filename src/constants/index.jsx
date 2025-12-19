@@ -6,6 +6,10 @@ import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
 import LogoLight from "@/assets/images/header/Logo-sm.svg";
 
+//Treatment
+import bgCard1 from "@/assets/images/treatment/world-all.png";
+import bgCard2 from "@/assets/images/treatment/calendar.png";
+import bhCard3 from "@/assets/images/treatment/cardbg.png";
 //Footer
 import AppleLogo from "@/assets/images/logos/apple.svg";
 import PlayLogo from "@/assets/images/logos/android.svg";
@@ -243,8 +247,9 @@ export const TREATMENT_CONTENT = {
       id: 1,
       title: `גישה לרופאים ומחירים בכל הארץ`,
       subTitle: `השוואה נוחה ושקופה של טיפולים ומטפלים – מכל מקום ובכל זמן`,
-      bgColor: "#6159A4",
+      bgColor: "#383172",
       textColor: "text-white",
+      bgImg: bgCard1,
     },
     {
       id: 2,
@@ -252,6 +257,7 @@ export const TREATMENT_CONTENT = {
       subTitle: `שליטה מלאה בתורים – ללא שיחות, ללא מאמץ`,
       bgColor: "#EAEAEB",
       textColor: "text-neutral-600",
+      bgImg: bgCard2,
     },
     {
       id: 3,
@@ -259,6 +265,7 @@ export const TREATMENT_CONTENT = {
       subTitle: `מציג את כל המטפלים בצורה ברורה עם סינון קל ונוח.`,
       bgColor: "#E4E3F3",
       textColor: "text-neutral-600",
+      bgImg: bhCard3,
     },
   ],
 };
