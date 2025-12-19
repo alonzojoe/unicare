@@ -18,6 +18,14 @@ import Icon3 from "@/assets/images/logos/close.png";
 import Icon4 from "@/assets/images/logos/building.png";
 import Icon5 from "@/assets/images/logos/sad.png";
 
+//Owners Section
+import HeroOwner from "@/assets/images/owners/hero.png";
+import Ic1 from "@/assets/images/owners/ic1.png";
+import Ic2 from "@/assets/images/owners/ic2.png";
+import Ic3 from "@/assets/images/owners/ic3.png";
+import Ic4 from "@/assets/images/owners/ic4.png";
+import Ic5 from "@/assets/images/owners/ic5.png";
+
 export const HEADER_CONTENT = {
   logo: Logo,
   logoLight: LogoLight,
@@ -332,4 +340,37 @@ export const RECRUITMENT_CONTENT = {
       icon: Icon5,
     },
   ],
+};
+
+export const OWNERS_CONTENT = {
+  title: `בעלי קליניקה - הצטרפו ל UNICARE והפכו כל שעה פנויה להזדמנות`,
+  hero: HeroOwner,
+  items: [
+    {
+      id: 1,
+      label: `תפוסה מלאה בשעות הפנויות`,
+      icon: Ic1,
+    },
+    {
+      id: 2,
+      label: `ניהול שקוף ומאובטח של ההשכרה`,
+      icon: Ic2,
+    },
+    {
+      id: 3,
+      label: `חיבור אוטומטי למטפלים מתאימים`,
+      icon: Ic3,
+    },
+    {
+      id: 4,
+      label: `הכנסה נוספת ללא מאמץ`,
+      icon: Ic4,
+    },
+    {
+      id: 5,
+      label: `בלי שיווק - הכל דרך המערכת`,
+      icon: Ic5,
+    },
+  ],
+  buttonText: `בואו נעבוד ביחד`,
 };
