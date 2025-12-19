@@ -1,11 +1,22 @@
+//Header
 import UpperLeft from "@/assets/images/hero/hero-upper-l.png";
 import UpperRight from "@/assets/images/hero/hero-upper-r.png";
 import LowerLeft from "@/assets/images/hero/hero-lower-l.png";
 import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
 import LogoLight from "@/assets/images/header/Logo-sm.svg";
+
+//Footer
 import AppleLogo from "@/assets/images/logos/apple.svg";
 import PlayLogo from "@/assets/images/logos/android.svg";
+
+//Recruiment Section
+import RecruitmentHero from "@/assets/images/rectruitment/hero.png";
+import Icon1 from "@/assets/images/logos/call.png";
+import Icon2 from "@/assets/images/logos/frame.png";
+import Icon3 from "@/assets/images/logos/close.png";
+import Icon4 from "@/assets/images/logos/building.png";
+import Icon5 from "@/assets/images/logos/sad.png";
 
 export const HEADER_CONTENT = {
   logo: Logo,
@@ -282,4 +293,43 @@ export const FOOTER_CONTENT = {
     },
   ],
   reserved: `All rights reserved © ${year} Unicare`,
+};
+
+export const RECRUITMENT_CONTENT = {
+  title: `רופאים / אנשי טיפול - הצטרפו ל UNICARE ותהנו מכל היתרונות `,
+  subTitle: ``,
+  imageUrl: RecruitmentHero,
+  header: `אתם תתמקדו בטיפולים ואנחנו בכל השאר`,
+  items: [
+    {
+      id: 1,
+      title: `מענה טלפוני גוזל לכם זמן רבועלות יקרה להעסקת מזכירה?`,
+      description: `המערכת קובעת, מזיזה ומבטלת תורים אוטומטית, בלי צורך במזכירה.`,
+      icon: Icon1,
+    },
+    {
+      id: 2,
+      title: `לא מעוניינים להתעסק בשיווק?`,
+      description: `המערכת קובעת, מזיזה ומבטלת תורים אוטומטית, בלי צורך במזכירה.`,
+      icon: Icon2,
+    },
+    {
+      id: 3,
+      title: `ביטולים פוגעים ברווחיות?`,
+      description: `מדיניות ביטולים לפי החלטת המטפל. שיבוץ מטופלים חלופיים בעת ביטול.`,
+      icon: Icon3,
+    },
+    {
+      id: 4,
+      title: `אין לכם קליניקה ולא משתלם לשכור באופן קבוע?`,
+      description: `עלות לפי שעת שימוש בלבד ואפשרות לשיבוץ אוטומטי בקליניקות בפריסה ארצית.`,
+      icon: Icon4,
+    },
+    {
+      id: 5,
+      title: `מרגישים לבד בתחום?`,
+      description: `הצטרפו לקהילת רופאים פעילה - שיתופים, התייעצויות ומפגשים מקצועיים.`,
+      icon: Icon5,
+    },
+  ],
 };

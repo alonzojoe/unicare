@@ -15,6 +15,7 @@
   --color-gray-text: #6D6E71;
   --color-palette-primary-200: #A8A2D7;
   --color-theme-bg: #FAFAFA;
+  --color-darker: #1B1B1B;
   /* font-sizes */
   --text-3xs: 7px;
   --text-2xs: 8px;
@@ -38,6 +39,7 @@
   --radius-4xl: 60px;
   --radius-3xl: 40px;
   --radius-2xl: 24px;
+  --radius-1xl: 14px;
   --radius-xl: 12px;
 
   /* custom screen width based on figma */
