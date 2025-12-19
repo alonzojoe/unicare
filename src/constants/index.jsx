@@ -20,6 +20,7 @@ import Icon5 from "@/assets/images/logos/sad.png";
 
 //Owners Section
 import HeroOwner from "@/assets/images/owners/hero.png";
+import CardBg from "@/assets/images/owners/card-bg.jpg";
 import Ic1 from "@/assets/images/owners/ic1.png";
 import Ic2 from "@/assets/images/owners/ic2.png";
 import Ic3 from "@/assets/images/owners/ic3.png";
@@ -343,8 +344,9 @@ export const RECRUITMENT_CONTENT = {
 };
 
 export const OWNERS_CONTENT = {
-  title: `בעלי קליניקה - הצטרפו ל UNICARE והפכו כל שעה פנויה להזדמנות`,
-  hero: HeroOwner,
+  title: `UNICARE והפכו כל שעה פנויה להזדמנות`,
+  subTitle: `והפכו כל שעה פנויה להזדמנות`,
+  imageUrl: HeroOwner,
   items: [
     {
       id: 1,
@@ -373,4 +375,5 @@ export const OWNERS_CONTENT = {
     },
   ],
   buttonText: `בואו נעבוד ביחד`,
+  cardBg: CardBg,
 };

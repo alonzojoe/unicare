@@ -6,7 +6,7 @@ import Button from "@/components/UI/Buttons/Button";
 const RectruitmentSection = () => {
   const { title, subTitle, imageUrl, header, items } = RECRUITMENT_CONTENT;
   return (
-    <section id="treatment">
+    <section id="recruitment">
       <ContentHeader title={title} subTitle={subTitle} />
       <div className="max-w-10xl mx-auto py-14 lg:pl-[42.5] lg:pr-16 px-8 lg:px-0 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
         <div className="order-2 md:order-1 flex items-center justify-center md:justify-center">
