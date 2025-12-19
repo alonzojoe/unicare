@@ -82,9 +82,9 @@ const Navbar = () => {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="h-full p-4 bg-theme-bg backdrop-blur-md overflow-y-auto">
+          <div className="h-full p-4 hero-bg backdrop-blur-md overflow-y-auto">
             <div className="flex flex-col items-center space-y-5">
-              <Button className="min-w-42.5" variant="outline">
+              <Button className="min-w-42.5 mt-10" variant="outline">
                 <div className="flex items-center gap-2 text-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

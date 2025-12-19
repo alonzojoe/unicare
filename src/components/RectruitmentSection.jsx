@@ -23,8 +23,8 @@ const RectruitmentSection = () => {
           {items.map((item) => (
             <RecruitmentCard content={item} key={item.id} />
           ))}
-          <div className="flex mt-5 items-center justify-center">
-            <Button className="min-w-[42.5] bg-light-primary">
+          <div className="flex mt-5 items-center justify-center w-full md">
+            <Button className="w-full md:max-w-[281px] bg-light-primary">
               <div className="flex items-center gap-2 text-lg">
                 <span className="font-700-line-136 text-white">{`הצטרפו לאלפי המטפלים`}</span>
               </div>
