@@ -6,6 +6,10 @@ import LowerRight from "@/assets/images/hero/hero-lower-r.png";
 import Logo from "@/assets/images/header/logo.png";
 import LogoLight from "@/assets/images/header/Logo-sm.svg";
 
+//Treatment
+import bgCard1 from "@/assets/images/treatment/world-all.png";
+import bgCard2 from "@/assets/images/treatment/calendar.png";
+import bhCard3 from "@/assets/images/treatment/cardbg.png";
 //Footer
 import AppleLogo from "@/assets/images/logos/apple.svg";
 import PlayLogo from "@/assets/images/logos/android.svg";
@@ -20,12 +24,14 @@ import Icon5 from "@/assets/images/logos/sad.png";
 
 //Owners Section
 import HeroOwner from "@/assets/images/owners/hero.png";
-import CardBg from "@/assets/images/owners/card-bg.jpg";
+import CardBg from "@/assets/images/owners/card-bg2.jpg";
 import Ic1 from "@/assets/images/owners/ic1.png";
 import Ic2 from "@/assets/images/owners/ic2.png";
 import Ic3 from "@/assets/images/owners/ic3.png";
 import Ic4 from "@/assets/images/owners/ic4.png";
 import Ic5 from "@/assets/images/owners/ic5.png";
+import HeroTop from "@/assets/images/owners/owner-hero-top.png";
+import HeroBottom from "@/assets/images/owners/owner-hero-bottom.png";
 
 export const HEADER_CONTENT = {
   logo: Logo,
@@ -241,8 +247,9 @@ export const TREATMENT_CONTENT = {
       id: 1,
       title: `גישה לרופאים ומחירים בכל הארץ`,
       subTitle: `השוואה נוחה ושקופה של טיפולים ומטפלים – מכל מקום ובכל זמן`,
-      bgColor: "#6159A4",
+      bgColor: "#383172",
       textColor: "text-white",
+      bgImg: bgCard1,
     },
     {
       id: 2,
@@ -250,6 +257,7 @@ export const TREATMENT_CONTENT = {
       subTitle: `שליטה מלאה בתורים – ללא שיחות, ללא מאמץ`,
       bgColor: "#EAEAEB",
       textColor: "text-neutral-600",
+      bgImg: bgCard2,
     },
     {
       id: 3,
@@ -257,6 +265,7 @@ export const TREATMENT_CONTENT = {
       subTitle: `מציג את כל המטפלים בצורה ברורה עם סינון קל ונוח.`,
       bgColor: "#E4E3F3",
       textColor: "text-neutral-600",
+      bgImg: bhCard3,
     },
   ],
 };
@@ -376,4 +385,6 @@ export const OWNERS_CONTENT = {
   ],
   buttonText: `בואו נעבוד ביחד`,
   cardBg: CardBg,
+  heroTop: HeroTop,
+  heroBottom: HeroBottom,
 };

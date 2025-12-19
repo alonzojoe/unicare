@@ -8,7 +8,7 @@ const RectruitmentSection = () => {
   return (
     <section id="recruitment">
       <ContentHeader title={title} subTitle={subTitle} />
-      <div className="max-w-10xl mx-auto py-14 lg:pl-[42.5] lg:pr-16 px-8 lg:px-0 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
+      <div className="max-w-10xl mx-auto py-14 px-4 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
         <div className="order-2 md:order-1 flex items-center justify-center md:justify-center">
           <img
             className="w-md xl:w-xl"
@@ -23,8 +23,8 @@ const RectruitmentSection = () => {
           {items.map((item) => (
             <RecruitmentCard content={item} key={item.id} />
           ))}
-          <div className="flex mt-5 items-center justify-center">
-            <Button className="min-w-[42.5] bg-light-primary">
+          <div className="flex mt-5 items-center justify-center w-full md">
+            <Button className="w-full md:max-w-[281px] bg-light-primary">
               <div className="flex items-center gap-2 text-lg">
                 <span className="font-700-line-136 text-white">{`הצטרפו לאלפי המטפלים`}</span>
               </div>

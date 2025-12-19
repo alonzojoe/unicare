@@ -1,4 +1,5 @@
 import { HERO_CONTENT } from "@/constants";
+import { cn } from "@/libs/utils";
 import HeroGallery from "@/assets/images/hero/Hero_Gallery.png";
 import SearchContainer, {
   SearchContainerSingle,
@@ -8,14 +9,15 @@ import QuestionItem from "@/components/Items/Questionitem";
 import SearchField from "@/components/UI/SearchField";
 
 import Button from "@/components/UI/Buttons/Button";
+import SmImage from "@/assets/images/hero/smImage.png";
 
 const HeroSection = () => {
   const { title, subTitle, items, questions, searchBar } = HERO_CONTENT;
 
   return (
     <section id="hero" className="pt-20 md:36 lg:pt-42">
-      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-8 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-8 lg:grid-cols-2 mb-20">
-        <div className="order-2 md:order-1 flex items-center justify-end md:justify-center">
+      <div className="hero-bg rounded-br-4xl rounded-bl-4xl md:rounded-4xl max-w-10xl mx-auto py-14 px-4 lg:pl-[42.5] lg:pr-16 grid items-center grid-cols-1 gap-0 lg:gap-8 lg:grid-cols-2 mb-10 lg:mb-20">
+        <div className="order-2 md:order-1 hidden lg:flex items-center justify-end md:justify-center">
           <img className="w-md xl:w-xl" src={HeroGallery} alt="hero-image" />
         </div>
         <div className="order-1 md:order-2 flex flex-col space-y-3 items-center lg:items-end">
@@ -65,13 +67,21 @@ const HeroSection = () => {
           </div>
 
           <div className="w-[90%] hidden md:flex flex-col space-y-3 my-5">
-            <h2 className="text-5xl text-primary text-right font-500-line-130">
+            <h2 className="text-5xl text-primary text-center md:text-right font-500-line-130">
               {searchBar.title}
             </h2>
             <SearchContainer>
               <div className="flex items-center gap-2 w-full">
                 {searchBar.fields.map((item, index) => (
-                  <SearchField item={item} index={index} key={item.id} />
+                  <div
+                    key={item.id}
+                    className={cn(
+                      "flex flex-1 justify-center items-center",
+                      index === 0 && "pr-5 border-r-2 border-gray-300"
+                    )}
+                  >
+                    <SearchField item={item} />
+                  </div>
                 ))}
               </div>
             </SearchContainer>
@@ -82,6 +92,10 @@ const HeroSection = () => {
               <QuestionItem key={item.id} item={item} />
             ))}
           </div>
+        </div>
+
+        <div className="order-2 flex md:hidden items-center justify-center">
+          <img className="w-full xl:w-xl" src={SmImage} alt="hero-image" />
         </div>
       </div>
     </section>
